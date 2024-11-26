@@ -1,11 +1,11 @@
-const userInput = document.getElementById("user-input"); //1
-const checkBtn = document.getElementById("check-btn"); //2
-const clearBtn = document.getElementById("clear-btn"); //3
-const results = document.getElementById("results-div"); //4
+const userInput = document.getElementById("user-input");
+const checkBtn = document.getElementById("check-btn");
+const clearBtn = document.getElementById("clear-btn");
+const results = document.getElementById("results-div");
 
 checkBtn.addEventListener("click", () => {
   if (userInput.value === "") {
-    alert("Please provide a phone number") //5
+    alert("Please provide a phone number")
     } else {
       check(userInput.value)
     }
@@ -24,7 +24,7 @@ userInput.addEventListener("keydown", (e) => {
 clearBtn.addEventListener("click", () => {
   results.innerText = "";
   userInput.value = "";
-  }); //6
+  });
   
 const check = (userInput) => {
   const valid = /^1?\s?(?:\d{3}|\(\d{3}\))[-/.\s]?\d{3}[-/.\s]?\d{4}$/;
