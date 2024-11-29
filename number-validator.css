@@ -22,7 +22,7 @@ input {
 }
 
 input:focus {
-  outline: 5px solid #004400;
+  outline: 4px solid #004400;
 }
 
 button {
@@ -38,5 +38,7 @@ button {
 }
 
 #results-div {
- color: white;
+  color: white;
+  margin: 5px;
+  display: inline-block;
 }
